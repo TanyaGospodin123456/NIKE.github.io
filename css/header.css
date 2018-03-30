@@ -122,11 +122,11 @@
 
 .order_icon
 {
-	background-image: url("/img/order_icon.svg");
+	background-image: url("../img/order_icon.svg");
 	background-repeat: no-repeat;
-    width: 20px;
-    margin-left: 34px;
-    vertical-align: center;
+	background-position: 34px left;
+        width: 20px;
+        vertical-align: center;
 	margin-right: 10px;
 }
 
@@ -291,6 +291,8 @@
 	margin: 0 10px;
 	padding-left: 10px;
 	padding-right: 10px;
+	/*border-bottom: 4px;
+	botder-bottom-color: inherit;*/
 		
 	font-family: 'Trueno', sans-serif;
 	font-weight: 200;

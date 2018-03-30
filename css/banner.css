@@ -1,0 +1,71 @@
+﻿/* Banner */
+
+.banner,
+.banner_main,
+.sneakers_banner,
+.banner_text_contain
+{
+	margin: 0;
+	padding: 0;
+}
+
+.banner
+{
+	background-color: #f0efee;
+	color: #8a8784;
+}
+
+.banner .container
+{
+	box-sizing: border-box;
+	padding-top: 133px;
+	padding-bottom: 134px;
+	padding-left: 570px;
+
+	background-image: url("../img/Banner_img.png");
+	background-repeat: no-repeat;
+	background-position: 1px left;
+}
+
+.banner_text_contant span
+{
+	font-family: 'Trueno', sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+	color: #623232;
+}
+
+.banner_text_contant strong
+{
+	font-family: 'Trueno', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 93px;
+	color: #623232;
+}
+
+.banner_text_contant em
+{
+	font-family: 'Trueno', sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 50px;
+	line-height: 61px;
+	color: #ff7270;
+}
+
+.banner_text_contant_description
+{
+	/*display: block;*/
+	margin-top: 17px;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 33px;
+}
+
+.btn btn_browsing
+{
+	margin-top: 33px;
+}
+
+/* /Banner */
