@@ -5,57 +5,16 @@
   <title>Sportshold | Homepage</title>
   
 <!-- Fonts -->
-  <style type="text/css">
-  	@font-face
-  	{
-  		font-family: 'Trueno';
-		src: url('../fonts/TruenoRg.eot');
-		src: url('../fonts/TruenoRg.eot?iefix') format('eot'),
-		url('../fonts/TruenoRg.woff') format('woff'),
-		url('../fonts/TruenoRg.ttf') format('truetype'),
-		url('../fonts/TruenoRg.svg#TruenoRg') format('svg');
-		font-weight: normal;
-		font-style: normal;
-	}
-	@font-face
-  	{
-  		font-family: 'Trueno';
-		src: url('../fonts/TruenoLt.eot');
-		src: url('../fonts/TruenoLt.eot?iefix') format('eot'),
-		url('../fonts/TruenoLt.woff') format('woff'),
-		url('../fonts/TruenoLt.ttf') format('truetype'),
-		url('../fonts/TruenoLt.svg#TruenoLt') format('svg');
-		font-weight: lighter;
-		font-style: normal;
-	}
-	@font-face
-  	{
-  		font-family: 'Trueno';
-		src: url('../fonts/TruenoBd.eot');
-		src: url('../fonts/TruenoBd.eot?iefix') format('eot'),
-		url('../fonts/TruenoBd.woff') format('woff'),
-		url('../fonts/TruenoBd.ttf') format('truetype'),
-		url('../fonts/TruenoBd.svg#TruenoBd') format('svg');
-		font-weight: bold;
-		font-style: normal;
-	}
-	@font-face
-  	{
-  		font-family: 'Trueno';
-		src: url('../fonts/TruenoUltBlk.eot');
-		src: url('../fonts/TruenoUltBlk.eot?iefix') format('eot'),
-		url('../fonts/TruenoUltBlk.woff') format('woff'),
-		url('../fonts/TruenoUltBlk.ttf') format('truetype'),
-		url('../fonts/TruenoUltBlk.svg#TruenoUltBlk') format('svg');
-		font-weight: bolder;
-		font-style: normal;
-	}
-  </style>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
+  <script src="https://use.fontawesome.com/bc01dc119f.js"></script>
+
 <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/our_best_offers.css">
+  <link rel="stylesheet" href="css/products.css">
 
   
 </head>
@@ -73,8 +32,7 @@
   			</ul>
   		</nav>
   		<div class="order_wrapper">
-  			<i class="order_icon"></i>
-  			<a class="order_link" href="#"><em>$465.00</em> <span>4 Items</span></a>
+  			<a class="order_link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> <span> $465.00  4 Items</span></a>
   		</div>
   		<div class="authorization_wrapper">
   			<ul class="authorization authorization_main">
@@ -132,7 +90,7 @@
   	<section class="banner">
   		<h2 class="visually_hidden">Nike Air Max</h2>
   		<div class="container banner_main">
-  			<!--<img class="sneakers_banner" src="img/Banner_img.png" alt="Sneakers Nike Air Max" width="774">-->
+  			<img class="sneakers_banner" src="img/Banner_img.png" alt="Sneakers Nike Air Max" width="774">
   			<p class="banner_text_contant">
   				<span>From $80.00</span><br>
   				<strong>Nike Air Max</strong><br>
@@ -153,35 +111,50 @@
   		<div class="container best_offers">
   			<ul class="list_best_offers">
   				<li class="best_offer">
-  					<img class="best_offer_img" src="img/Kyrie.png" alt="Sneakers Nike Kyrie 3" width="540">
-  					<a class="logo_best_offer"><img class="logo_best_offer_img" src="img/Logo_Kyrie.png" alt="Logo Sportshold" width="82"></a>
-  					<p class="kyrie_text_contant">
-  						Discower the new<br>
-  						<strong>NIKE KYRIE 3</strong>
-  					</p>
-  					<a class="btn btn_view" href="#">VIEW COLLECTION</a>
+  					<figure class="figure_kyrie">
+    					<a class="logo_best_offer"><img class="logo_best_offer_img" src="img/Logo_Kyrie.png" alt="Logo Sportshold" width="82"></a>
+  						<figcaption class="figcap_kyrie">
+  							<p class="kyrie_text_contant">Discover the new<br>
+  								<strong>NIKE KYRIE 3</strong>
+  							</p>
+  						</figcaption>
+  						<img class="best_offer_img" src="img/Kyrie.png" alt="Sneakers Nike Kyrie 3" width="540">
+	  					<a class="btn btn_view" href="#">VIEW COLLECTION</a>
+  					</figure>
   				</li>
   				<li class="best_offer">
-  					<img class="best_offer_img" src="img/New_Arrivals.png" alt="Sneakers New Arrivals" width="540">
-  					<p class="new_arrivals_text_contant">
-  						Check out the<br>
-  						<strong>NEW ARRIVALS</strong>
-  					</p>
-  					<a class="btn btn_discover" href="#">DISCOVER</a>
+  					<figure class="figure_arrivals">
+  						<figcaption class="figcap_arrivals">
+  							<p class="new_arrivals_text_contant">
+  								Check out the<br>
+  								<strong>NEW ARRIVALS</strong>
+  							</p>
+  						</figcaption>
+   						<img class="best_offer_img" src="img/New_Arrivals.png" alt="Sneakers New Arrivals" width="540">
+  						<a class="btn btn_discover" href="#">DISCOVER</a>
+  					</figure>
   				</li>
   				<li class="best_offer">
-  					<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Athletes.png" alt="Sneakers Best for Athletes" width="255"></a>
-  					<p class="athletes_text_contant">
-  						Best for<br>
-  						<strong>ATHLETES</strong>
-  					</p>
+  					<figure class="figure_athletes">
+  						<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Athletes.png" alt="Sneakers Best for Athletes" width="255"></a>
+  						<figcaption class="figcap_athletes">
+  							<p class="athletes_text_contant">
+  								Best for<br>
+  								<strong>ATHLETES</strong>
+  							</p>
+  						</figcaption>
+  					</figure>
   				</li>
   				<li class="best_offer">
-  					<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Premium.png" alt="Feel Premium" width="255"></a>
-  					<p class="premium_text_contant">
-  						Feel<br>
-  						<strong>PREMIUM</strong>
-  					</p>
+  					<figure class="figure_premium">
+	  					<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Premium.png" alt="Feel Premium" width="255"></a>
+  						<figcaption class="figcap_premium">
+		  					<p class="premium_text_contant">
+  								Feel<br>
+  								<strong>PREMIUM</strong>
+  							</p>
+  						</figcaption>
+  					</figure>
   				</li>
   			</ul>
   		</div>
@@ -191,17 +164,23 @@
   	<section class="our_products">
   		<div class="container">
   			<h2 class="visually_hidden">Products</h2>
-  			<form class="pruducts_categories" name="Products" action="#" method="post">
-  				<input id="pruducts_new" type="radio" name="filter" value="NEW" checked>
-  				<input id="pruducts_popular" type="radio" name="filter" value="POPULAR">
-  				<input id="pruducts_top_picks" type="radio" name="filter" value="TOP PICKS">
-  				<label class="pruducts_filter" for="pruducts_new">NEW</label>
-  				<label class="pruducts_filter" for="pruducts_popular">POPULAR</label>
-  				<label class="pruducts_filter" for="pruducts_top_picks">TOP PICKS</label>
+  			<form class="products_categories" name="Products" action="#" method="post">
+  				<label class="products_filter">  				
+  					<input type="radio" name="filter" value="NEW" checked>
+  					<span>NEW</span>
+  				</label>
+  				<label class="products_filter">
+	  				<input type="radio" name="filter" value="POPULAR">
+  					<span>POPULAR</span>
+  				</label>
+  				<label class="products_filter">
+  					<input type="radio" name="filter" value="TOP PICKS">
+  					<span>TOP PICKS</span>
+  				</label>
   			</form>
-  			<ul class="pruducts_list clearfix">
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_1.png" alt="Converse Breakpoint Suede Blue" width="255"></a>
+  			<ul class="products_list clearfix">
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_1.png" alt="Converse Breakpoint Suede Blue" width="255">
   					<p class="article_text_contant">
   						<b>MEN</b><br>
   						Converse Breakpoint<br>
@@ -212,18 +191,20 @@
   						<span>$45.00</span><br>
   						<span><s>$60.00</s></span></p>
   					<p class="discount">-25%</p>
+  					</a>
   				</li>
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_2.png" alt="Converse CT All Star II" width="255"></a>
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_2.png" alt="Converse CT All Star II" width="255">
   					<p class="article_text_contant">
   						<b>MEN/WOMEN</b><br>
   						Converse CT All Star II<br>
   						<span>#16378271</span>
   					</p>
   					<p class="article_price">$55.00</p>
+  					</a>
   				</li>
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_3.png" alt="Adidas Pure Boost Chill" width="255"></a>
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_3.png" alt="Adidas Pure Boost Chill" width="255">
   					<p class="article_text_contant">
   						<b>WOMEN</b><br>
   						Adidas Pure Boost Chill<br>
@@ -233,27 +214,30 @@
   						<span>$60.00</span><br>
   						<span><s>$80.00</s></span></p>
   					<p class="discount">-25%</p>
+  					</a>
   				</li>
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_4.png" alt="Puma Duplex W Casual" width="255"></a>
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_4.png" alt="Puma Duplex W Casual" width="255">
   					<p class="article_text_contant">
   						<b>MEN</b><br>
   						Puma Duplex W Casual<br>
   						<span>#16378271</span>
   					</p>
   					<p class="article_price">$50.00</p>
+  					</a>
   				</li>
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_5.png" alt="Adidas Alphabounce 1M" width="255"></a>
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_5.png" alt="Adidas Alphabounce 1M" width="255">
   					<p class="article_text_contant">
   						<b>MEN</b><br>
   						Adidas Alphabounce 1M<br>
   						<span>#16378271</span>
   					</p>
   					<p class="article_price">$90.00</p>
+  					</a>
   				</li>
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_6.png" alt="Asics GEL-Epirus" width="255"></a>
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_6.png" alt="Asics GEL-Epirus" width="255">
   					<p class="article_text_contant">
   						<b>MEN</b><br>
   						Asics GEL-Epirus<br>
@@ -263,9 +247,10 @@
   						<span>$50.00</span><br>
   						<span><s>$100.00</s></span></p>
   					<p class="discount">-50%</p>
+  					</a>
   				</li>
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_7.png" alt="Adidas Originals Courtvantage Mesh" width="255"></a>
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_7.png" alt="Adidas Originals Courtvantage Mesh" width="255">
   					<p class="article_text_contant">
   						<b>MEN</b><br>
   						Adidas Originals<br>
@@ -273,9 +258,10 @@
   						<span>#16378271</span>
   					</p>
   					<p class="article_price">$40.00</p>
+  					</a>
   				</li>
-  				<li class="pruducts_article">
-  					<a class="article" href="#"><img class="article_img" src="img/Article_8.png" alt="Adidas Originals Climacool 1" width="255"></a>
+  				<li class="products_article">
+  					<a class="article" href="#"><img class="article_img" src="img/Article_8.png" alt="Adidas Originals Climacool 1" width="255">
   					<p class="article_text_contant">
   						<b>MEN</b><br>
   						Adidas Originals<br>
@@ -283,6 +269,7 @@
   						<span>#16378271</span>
   					</p>
   					<p class="article_price">$80.00</p>
+  					</a>
   				</li>
   			</ul>
  	 	</div>
