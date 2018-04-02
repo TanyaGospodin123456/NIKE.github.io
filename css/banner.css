@@ -21,24 +21,32 @@
 	padding-top: 133px;
 	padding-bottom: 134px;
 	padding-left: 570px;
+}
 
-	background-image: url("../img/Banner_img.png");
-	background-repeat: no-repeat;
-	background-position: 1px left;
+.banner_main
+{
+	position: relative;
+}
+
+.sneakers_banner
+{
+	position: absolute;
+	top: 0;
+	right: 665px;
+	white-space: nowrap;
 }
 
 .banner_text_contant span
 {
-	font-family: 'Trueno', sans-serif;
-	font-weight: 200;
 	font-size: 30px;
 	color: #623232;
 }
 
 .banner_text_contant strong
 {
-	font-family: 'Trueno', sans-serif;
-	font-weight: 800;
+	font-family: 'TruenoUltraBlack', sans-serif;
+	font-weight: normal;
+	font-style: normal;
 	font-size: 70px;
 	line-height: 93px;
 	color: #623232;
@@ -46,8 +54,8 @@
 
 .banner_text_contant em
 {
-	font-family: 'Trueno', sans-serif;
-	font-weight: 800;
+	font-family: 'TruenoUltraBlack', sans-serif;
+	font-weight: normal;
 	font-style: normal;
 	font-size: 50px;
 	line-height: 61px;

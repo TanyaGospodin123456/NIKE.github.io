@@ -1,0 +1,236 @@
+﻿/* Our best offers */
+
+.our_best_offers,
+.best_offers,
+.logo_best_offer,
+.logo_best_offer_img,
+.list_best_offers,
+.best_offer,
+.best_offer_img,
+.kyrie_text_contant,
+.figure_kyrie,
+.new_arrivals_text_contant,
+.best_offer_link,
+.athletes_text_contant,
+.premium_text_contant,
+.figcap_kyrie,
+.figure_arrivals,
+.figcap_arrivals,
+.figure_athletes,
+.figcap_athletes,
+.figure_premium,
+.figcap_premium
+{
+	margin: 0;
+	padding: 0;
+}
+
+.container
+{
+	position: relative;
+}
+
+.our_best_offers .container
+{
+	height: 540px;
+}
+
+.list_best_offers
+{
+	padding-top: 50px;
+}
+
+.list_best_offers,
+.best_offer
+{
+	display: block;
+	list-style: none;
+}
+
+.figure_kyrie
+{
+	position: relative;
+	float: left;
+
+	width: 540px;
+	height: 540px;
+	margin-right: 30px;
+}
+
+.logo_best_offer,
+.best_offer_link
+{
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	color: inherit;
+	line-height: 0;
+	cursor: pointer;
+}
+
+.logo_best_offer_img
+{
+	/*display: inline-block;*/
+	width: 32px;
+	border: none;
+	outline: none;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.best_offer_img
+{
+	white-space: nowrap;
+}
+
+.kyrie_text_contant
+{
+	display: block;
+	position: absolute;
+	padding-top: 45px;
+	padding-left: 150px;
+	text-align: center;
+
+	font-family: 'TruenoLight', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	color: #ffffff; 
+}
+
+.kyrie_text_contant strong
+{
+	font-family: 'TruenoBold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 51px;
+	color: #41d9cd;
+}
+
+.btn_view
+{
+	position: absolute;
+	bottom: 50px;
+	left: 165px;
+}
+
+.figure_arrivals
+{
+	position: relative;
+	float: left;
+
+	width: 540px;
+	height: 255px;
+	margin-bottom: 30px;
+}
+
+.figcap_arrivals
+{
+	display: block;
+	position: absolute;
+	padding-top: 59px;
+	padding-left: 227px;
+	text-align: center;
+}
+
+.new_arrivals_text_contant
+{
+	font-family: 'TruenoLight', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.new_arrivals_text_contant strong
+{
+	font-family: 'TruenoBold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 51px;
+	color: #ffffff;
+}
+
+.btn_discover
+{
+	position: absolute;
+	bottom: 59px;
+	left: 272px;
+}
+
+.figure_athletes
+{
+	position: relative;
+	float: left;
+	width: 255px;
+	height: 255px;
+	margin-right: 30px;
+}
+
+.figcap_athletes
+{
+	display: block;
+	position: absolute;
+	padding-top: 148px;
+	padding-left: 48px;
+	text-align: center;
+}
+
+.athletes_text_contant
+{
+	font-family: 'TruenoLight', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.athletes_text_contant strong
+{
+	font-family: 'TruenoBold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 51px;
+	color: #ff7270;
+}
+
+.figure_premium
+{
+	position: relative;
+	float: left;
+	width: 255px;
+	height: 255px;
+}
+
+.figcap_premium
+{
+	display: block;
+	position: absolute;
+	padding-top: 36px;
+	padding-left: 55px;
+	text-align: center;
+}
+
+.premium_text_contant
+{
+	font-family: 'TruenoLight', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	color: #6b7072;
+}
+
+.premium_text_contant strong
+{
+	font-family: 'TruenoBold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 51px;
+	color: #ffffff;
+}
+
+/* /Our best offers */
