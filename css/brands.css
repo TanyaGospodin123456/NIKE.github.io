@@ -1,0 +1,116 @@
+﻿/* Brands */
+
+.brands,
+.brands_list,
+.brands_item,
+.brands_link
+{
+	margin: 0;
+	padding: 0;
+}
+
+.brands
+{
+	display: block;
+	margin-bottom: 100px;
+}
+
+.brands .container
+{
+	margin: 0;
+	padding: 0;
+}
+
+.brands_list
+{
+	list-style: none;
+	margin: 0 30px;
+	height: 68px;
+}
+
+.brands_item
+{
+	position: relative;
+	list-style: none;
+	float: left;
+	width: 100px;
+	margin-right: 79px;
+}
+
+.brands_item:first-child
+{
+	margin-right: 88px;
+}
+
+.brands_item:nth-child(3)
+{
+	width: 120px;
+	margin-right: 83px;
+}
+
+.brands_item:nth-child(5)
+{
+	width: 120px;
+}
+
+.brands_item:last-child
+{
+	margin-right: 0;
+}
+
+.brands_link
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 68px;
+
+	text-decoration: none;
+	color: inherit;
+}
+
+.brands_link::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	margin: 0 auto;
+	height: 68px;
+	background-image: url(../img/Brands_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.link_adidas::before
+{
+	background-position: 0 0;
+}
+
+.link_nike::before
+{
+	background-position: -188px 0;
+}
+
+.link_puma::before
+{
+	background-position: -367px 0;
+}
+
+.link_asics::before
+{
+	background-position: -570px 0;
+}
+
+.link_new_balance::before
+{
+	background-position: -748px 0;
+}
+
+.link_fila::before
+{
+	background-position: -947px 0;
+}
+
+/* /Brands */

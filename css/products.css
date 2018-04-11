@@ -9,6 +9,7 @@
 .article,
 .article_text_contant,
 .article_price,
+.article_price_with_discount,
 .discount
 {
 	margin: 0;
@@ -122,7 +123,15 @@
 	font-weight: normal;
 	font-style: normal;
 	line-height: 26px;
+	font-size: 14px;
+	text-align: left;
+	color: #93918e;
+}
+
+.article_text_contant span
+{
 	font-size: 12px;
+	color: #bdb9b5;
 }
 
 .article_price
@@ -136,7 +145,30 @@
 	font-weight: normal;
 	font-style: normal;
 	line-height: 26px;
-	font-size: 17px;
+	font-size: 22px;
+	color: #93918e;
+}
+
+.article_price_with_discount
+{
+	display: block;
+	position: absolute;
+	left: 30px;
+	top: 30px;
+
+	font-family: 'TruenoLight', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 26px;
+	font-size: 14px;
+	color: #93918e;
+	text-align: left;
+}
+
+.article_price_with_discount span
+{
+	font-size: 22px;
+	color: #ff7270;
 }
 
 .discount
@@ -145,14 +177,16 @@
 	position: absolute;
 	right: 0;
 	top: 22px;
-	padding: 9px;
+	padding-left: 10px;
+	padding-right: 10px;
 	background-color: #ff7270;
 
 	font-family: 'TruenoLight', sans-serif;
 	font-weight: normal;
 	font-style: normal;
-	line-height: 26px;
-	font-size: 17px;
+	line-height: 28px;
+	font-size: 16px;
+	color: #ffffff;
 }
 
 /* /Products */

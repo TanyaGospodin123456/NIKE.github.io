@@ -1,0 +1,67 @@
+﻿/* Help Request */
+
+.help_request,
+.questions
+{
+	margin: 0;
+	padding: 0;
+}
+
+.help_request
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-color: #ff7270;
+}
+
+.questions
+{
+	display: block;
+	position: absolute;
+	top: 73px;
+	left: 90px;
+
+}
+
+.questions strong
+{
+	font-family: 'TruenoBold', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 30px;
+	margin-bottom: 18px;
+}
+
+.questions span
+{
+	font-family: 'TruenoLight', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.help_request::before
+{
+	content: "";
+	position: absolute;
+
+	width: 60px;
+	height: 42px;
+	top: 79px;
+	left: 0;
+	background-image: url(../img/Request_message.png);
+	background-repeat: no-repeat;
+}
+
+.btn_questions
+{
+	position: absolute;
+	top: 76px;
+	right: 0;
+}
+
+/* /Help Request */
