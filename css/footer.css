@@ -194,7 +194,6 @@
 .social
 {
 	float: left;
-	background-color: #555555;
 }
 
 .logo
@@ -241,7 +240,7 @@
 
 .social
 {
-	width: 190px;
+	width: 185px;
 	padding-left: 13px;
 	padding-top: 45px;
 }
