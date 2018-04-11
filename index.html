@@ -7,6 +7,7 @@
 <!-- Fonts -->
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
   <script src="https://use.fontawesome.com/bc01dc119f.js"></script>
+  <!--<script defer src="/static/fontawesome/fontawesome-all.js"></script>-->
 
 <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -15,6 +16,12 @@
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/our_best_offers.css">
   <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/latest_news.css">
+  <link rel="stylesheet" href="css/help_request.css">
+  <link rel="stylesheet" href="css/usps.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   
 </head>
@@ -136,24 +143,22 @@
   				</li>
   				<li class="best_offer">
   					<figure class="figure_athletes">
-  						<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Athletes.png" alt="Sneakers Best for Athletes" width="255"></a>
-  						<figcaption class="figcap_athletes">
+  						<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Athletes.png" alt="Sneakers Best for Athletes" width="255">
   							<p class="athletes_text_contant">
   								Best for<br>
   								<strong>ATHLETES</strong>
   							</p>
-  						</figcaption>
+  						</a>
   					</figure>
   				</li>
   				<li class="best_offer">
   					<figure class="figure_premium">
-	  					<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Premium.png" alt="Feel Premium" width="255"></a>
-  						<figcaption class="figcap_premium">
+	  					<a class="best_offer_link" href="#"><img class="best_offer_img" src="img/Premium.png" alt="Feel Premium" width="255">
 		  					<p class="premium_text_contant">
   								Feel<br>
   								<strong>PREMIUM</strong>
   							</p>
-  						</figcaption>
+  						</a>
   					</figure>
   				</li>
   			</ul>
@@ -187,9 +192,9 @@
   						Suede Blue<br>
   						<span>#16378271</span>
   					</p>
-  					<p class="article_price">
+  					<p class="article_price_with_discount">
   						<span>$45.00</span><br>
-  						<span><s>$60.00</s></span></p>
+  						<s>$60.00</s></p>
   					<p class="discount">-25%</p>
   					</a>
   				</li>
@@ -210,9 +215,9 @@
   						Adidas Pure Boost Chill<br>
   						<span>#16378271</span>
   					</p>
-  					<p class="article_price">
+  					<p class="article_price_with_discount">
   						<span>$60.00</span><br>
-  						<span><s>$80.00</s></span></p>
+  						<s>$80.00</s></p>
   					<p class="discount">-25%</p>
   					</a>
   				</li>
@@ -243,9 +248,9 @@
   						Asics GEL-Epirus<br>
   						<span>#16378271</span>
   					</p>
-  					<p class="article_price">
+  					<p class="article_price_with_discount">
   						<span>$50.00</span><br>
-  						<span><s>$100.00</s></span></p>
+  						<s>$100.00</s></p>
   					<p class="discount">-50%</p>
   					</a>
   				</li>
@@ -280,12 +285,12 @@
   		<div class="container">
   			<h2 class="visually_hidden">Brands</h2>
   			<ul class="brands_list">
-  				<li class="brands_item"><a class="brands_item_link_adidas" href="#"><span class="visually_hidden">Adidas</span></a></li>
-  				<li class="brands_item"><a class="brands_item_link_nike" href="#"><span class="visually_hidden">Nike</span></a></li>
-  				<li class="brands_item"><a class="brands_item_link_puma" href="#"><span class="visually_hidden">Puma</span></a></li>
-  				<li class="brands_item"><a class="brands_item_link_asics" href="#"><span class="visually_hidden">Asics</span></a></li>
-  				<li class="brands_item"><a class="brands_item_link_new_balance" href="#"><span class="visually_hidden">New Balance</span></a></li>
-  				<li class="brands_item"><a class="brands_item_link_fila" href="#"><span class="visually_hidden">Fila</span></a></li>
+  				<li class="brands_item"><a class="brands_link link_adidas" href="#"><span class="visually_hidden">Adidas</span></a></li>
+  				<li class="brands_item"><a class="brands_link link_nike" href="#"><span class="visually_hidden">Nike</span></a></li>
+  				<li class="brands_item"><a class="brands_link link_puma" href="#"><span class="visually_hidden">Puma</span></a></li>
+  				<li class="brands_item"><a class="brands_link link_asics" href="#"><span class="visually_hidden">Asics</span></a></li>
+  				<li class="brands_item"><a class="brands_link link_new_balance" href="#"><span class="visually_hidden">New Balance</span></a></li>
+  				<li class="brands_item"><a class="brands_link link_fila" href="#"><span class="visually_hidden">Fila</span></a></li>
   			</ul>
   		</div>
   	</section>
@@ -294,18 +299,32 @@
   	<section class="testimonials">
   		<div class="container">
   			<h2 class="visually_hidden">Testimonials</h2>
-  			<div class="clearfix">
-  				<form class="testimonials_clients" name="testimonials" action="#" method="post">
-  					<input id="client_1" type="radio" name="filter" value="Christopher Atkins">
-  					<input id="client_2" type="radio" name="filter" value="Andrew Ferraccioli" checked>
-  					<input id="client_3" type="radio" name="filter" value="Sandra Jensen">
-  					<label class="clients_filter" for="client_1">Christopher Atkins</label>
-  					<label class="clients_filter" for="client_2">Andrew Ferraccioli</label>
-  					<label class="clients_filter" for="client_3">Sandra Jensen</label>
-  				</form>
+  			<div class="slider">
+				<input id="client_1" class="slider_switch" type="radio" name="switch">
+				<input id="client_2" class="slider_switch" type="radio" name="switch" checked>
+				<input id="client_3" class="slider_switch" type="radio" name="switch">
+				<div class="slider_wrapper">
+					<div class="slider_indicators">
+  						<label class="clients_name" for="client_1">
+  						</label>
+  						<label class="clients_name" for="client_2">
+  						</label>
+  						<label class="clients_name" for="client_3">
+  						</label>
+  					</div>
+					<ul class="slider_contant container">
+  						<li class="slider_slide slider_slide_1">
+  							<p class="testimonials_client">The content of the first customer's feedback</p>
+  						</li>
+  						<li class="slider_slide slider_slide_2">
+  							<p class="testimonials_client">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  						</li>
+  						<li class="slider_slide slider_slide_3">
+  							<p class="testimonials_client">The content of the third customer's feedback</p>
+  						</li>
+  					</ul>
+  				</div>
   			</div>
-			<!--semantika-->
-  			<p class="testimonials_client_2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
   		</div>
   	</section>
   	<!--/Testimonials-->
@@ -313,27 +332,35 @@
   	<section class="latest_news">
   		<div class="container">
   			<h2 class="block_name_latest_news">LATEST NEWS</h2>
-  			<article class="news_article">
-  				<a class="article_link" href="#"><img class="img_news_article_1" src="img/News_Article_1" alt="Lorem ipsum dolor sit amet" width="350"></a>
-  				<time class="public_time">DEС 27, 2017</time>
-  				<p class="article_name">Lorem ipsum dolor sit amet<br>
-  				consectetur adipiscing elit</p>
-  				<p class="article_comments"><span>24 Comments</span></p>  				
-  			</article>
-  			<article class="news_article">
-  				<a class="article_link" href="#"><img class="img_news_article_2" src="img/News_Article_2" alt="Lorem ipsum dolor sit amet" width="350"></a>
-  				<time class="public_time">DEС 27, 2017</time>
-  				<p class="article_name">Lorem ipsum dolor sit amet<br>
-  				consectetur adipiscing elit</p>
-  				<p class="article_comments"><span>24 Comments</span></p>  				
-  			</article>
-  			<article class="news_article">
-  				<a class="article_link" href="#"><img class="img_news_article_3" src="img/News_Article_3" alt="Lorem ipsum dolor sit amet" width="350"></a>
-  				<time class="public_time">DEС 27, 2017</time>
-  				<p class="article_name">Lorem ipsum dolor sit amet<br>
-  				consectetur adipiscing elit</p>
-  				<p class="article_comments"><span>24 Comments</span></p>  				
-  			</article>
+  			<ul class="news_wrapper">
+	  			<li class="news_article">
+  					<a class="article_link" href="#">
+  						<img class="img_news img_news_article_1" src="img/News_Article_1.png" alt="Lorem ipsum dolor sit amet" width="350">
+  						<time class="public_time">DEС 27, 2017</time>
+  						<p class="article_name">Lorem ipsum dolor sit amet<br>
+  						consectetur adipiscing elit<br>
+	  					<span><i class="fas fa-comments"></i>24 Comments</span></p> 
+	  				</a> 				
+  				</li>
+  				<li class="news_article">
+  					<a class="article_link" href="#">
+  						<img class="img_news img_news_article_2" src="img/News_Article_2.png" alt="Lorem ipsum dolor sit amet" width="350">
+	  					<time class="public_time">DEС 27, 2017</time>
+  						<p class="article_name">Lorem ipsum dolor sit amet<br>
+  						consectetur adipiscing elit<br>
+  						<span><i class="fas fa-comments"></i>24 Comments</span></p>
+  					</a>  				
+	  			</li>
+  				<li class="news_article">
+  					<a class="article_link" href="#">
+  						<img class="img_news img_news_article_3" src="img/News_Article_3.png" alt="Lorem ipsum dolor sit amet" width="350">
+  						<time class="public_time">DEС 27, 2017</time>
+	  					<p class="article_name">Lorem ipsum dolor sit amet<br>
+	  					consectetur adipiscing elit<br>
+  						<span><i class="fas fa-comments"></i>24 Comments</span></p>  	
+  					</a>			
+  				</li>
+  			</ul>
   		</div>  		
   	</section>
   	<!--/Latest News-->
@@ -341,27 +368,27 @@
   	<section class="help_request">
   		<div class="container">
   			<h2 class="visually_hidden">Help Request</h2>
-  			<p class="questions"><span>LOOKING FOR HELP?</span><br>
+  			<p class="questions"><strong>LOOKING FOR HELP?</strong><br>
   			<span>Have any questions or need help with order? Let us know!</span></p>
   			<a class="btn btn_questions" href="#">MAKE AN INQUIRY</a> 			
   		</div>  		
   	</section>
   	<!--/Help Request-->
-  	<!--Additional Services-->
-  	<section class="additional_services">
+  	<!--USPs-->
+  	<section class="usps">
   		<div class="container">
   			<h2 class="visually_hidden">Additional Services</h2>
-  			<ul class="services_list">
-  				<li class="services_article"><a href="#">Free Shipping in Europe</a></li>
-  				<li class="services_article"><a href="#">Money Back Guarantee</a></li>
-  				<li class="services_article"><a href="#">24/7 Customer Support</a></li>
-  				<li class="services_article"><a href="#">Lowest Prices Guaranteed</a></li>
-  				<li class="services_article"><a href="#">Exclusive Items for Sportshold</a></li>
-  				<li class="services_article"><a href="#">5-day Delivery in Europe</a></li>
+  			<ul class="usps_list">
+  				<li class="usps_article"><a class="usps_link link_ship" href="#">Free Shipping in Europe</a></li>
+  				<li class="usps_article"><a class="usps_link link_money" href="#">Money Back Guarantee</a></li>
+  				<li class="usps_article"><a class="usps_link link_cust" href="#">24/7 Customer Support</a></li>
+  				<li class="usps_article"><a class="usps_link link_price" href="#">Lowest Prices Guaranteed</a></li>
+  				<li class="usps_article"><a class="usps_link link_excl" href="#">Exclusive Items for Sportshold</a></li>
+  				<li class="usps_article"><a class="usps_link link_del" href="#">5-day Delivery in Europe</a></li>
   			</ul>
   		</div>  		
   	</section>
-  	<!--/Additional Services-->
+  	<!--/USPs-->
   </main>
 <!-- /Page Main -->
 
@@ -369,9 +396,9 @@
   <footer class="page_footer">
   	<div class="Summury">
   		<div class="container">
-  			<div class="summury_block">
+  			<div class="summury_block block_cont">
   				<h2 class="visually_hidden">Contacts</h2>
-  				<ul class="contacts_list">
+  				<ul class="list">
   					<li class="contact">
   						<h3 class="contact_name">CALL US</h3>
   						<p class="contact_contain">0 (1234) 567 890</p>
@@ -386,43 +413,43 @@
   					</li>
   				</ul>
   			</div>
-  			<div class="summury_block">
+  			<div class="summury_block block_nav">
   				<h2 class="summury_block_name">NAVIGATION</h2>
-  				<ul class="navigation_list">
-  					<li class="navigation_article"><a href="#">Home</a></li>
-  					<li class="navigation_article"><a href="#">About us</a></li>
-  					<li class="navigation_article"><a href="#">Latest News</a></li>
-  					<li class="navigation_article"><a href="#">Reviews</a></li>
-  					<li class="navigation_article"><a href="#">Brands</a></li>
+  				<ul class="list">
+  					<li class="list_article"><a class="article_link_footer link_home" href="#">Home</a></li>
+  					<li class="list_article"><a class="article_link_footer link_ab" href="#">About us</a></li>
+  					<li class="list_article"><a class="article_link_footer link_lat" href="#">Latest News</a></li>
+  					<li class="list_article"><a class="article_link_footer link_rev" href="#">Reviews</a></li>
+  					<li class="list_article"><a class="article_link_footer link_bran" href="#">Brands</a></li>
   				</ul>
   			</div>
-  			<div class="summury_block">
+  			<div class="summury_block block_categ">
   				<h2 class="summury_block_name">CATEGORIES</h2>
-  				<ul class="categories_list">
-  					<li class="categories_article"><a href="#">Men</a></li>
-  					<li class="categories_article"><a href="#">Women</a></li>
-  					<li class="categories_article"><a href="#">Children</a></li>
-  					<li class="categories_article"><a href="#">Baby</a></li>
-  					<li class="categories_article"><a href="#">Accessories</a></li>
+  				<ul class="list">
+  					<li class="list_article"><a class="article_link_footer" href="#">Men</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Women</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Children</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Baby</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Accessories</a></li>
   				</ul>
   			</div>
-  			<div class="summury_block">
+  			<div class="summury_block block_sal">
   				<h2 class="summury_block_name">SALES</h2>
-  				<ul class="sales_list">
-  					<li class="sales_article"><a href="#">New Arrivals</a></li>
-  					<li class="sales_article"><a href="#">Most Popular</a></li>
-  					<li class="sales_article"><a href="#">Top Picks</a></li>
-  					<li class="sales_article"><a href="#">Outlet</a></li>
+  				<ul class="list">
+  					<li class="list_article"><a class="article_link_footer" href="#">New Arrivals</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Most Popular</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Top Picks</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Outlet</a></li>
   				</ul>
   			</div>
-  			<div class="summury_block">
+  			<div class="summury_block block_supp">
   				<h2 class="summury_block_name">SUPPORT</h2>
-  				<ul class="support_list">
-  					<li class="support_article"><a href="#">Shipping&Delivery</a></li>
-  					<li class="support_article"><a href="#">Return Policy</a></li>
-  					<li class="support_article"><a href="#">Terms of Service</a></li>
-  					<li class="support_article"><a href="#">Privacy Policy</a></li>
-  					<li class="support_article"><a href="#">Contact us</a></li>
+  				<ul class="list">
+  					<li class="list_article"><a class="article_link_footer" href="#">Shipping&Delivery</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Return Policy</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Terms of Service</a></li>
+  					<li class="list_article"><a class="article_link_footer" href="#">Privacy Policy</a></li>
+  					<li class="list_article"><a class="article_link" href="#">Contact us</a></li>
   				</ul>
   			</div>
   		</div>
@@ -438,10 +465,10 @@
   			</div>
   			<div class="social">
   				<ul class="social_list">
-  					<li class="social_link"><a href="#"><span class="visually_hidden">Twitter</span></a></li>
-  					<li class="social_link"><a href="#"><span class="visually_hidden">Facebook</span></a></li>
-  					<li class="social_link"><a href="#"><span class="visually_hidden">Pinterest</span></a></li>
-  					<li class="social_link"><a href="#"><span class="visually_hidden">YouTube</span></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Twitter</span><i class="fab fa-twitter"></i></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Facebook</span><i class="fab fa-facebook-f"></i></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Pinterest</span><i class="fab fa-pinterest"></i></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">YouTube</span><i class="fab fa-youtube"></i></a></li>
   				</ul>
   			</div>
   		</div>
