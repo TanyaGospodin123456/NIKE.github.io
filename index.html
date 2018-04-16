@@ -7,6 +7,7 @@
 <!-- Fonts -->
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
   <script src="https://use.fontawesome.com/bc01dc119f.js"></script>
+
   <!--<script defer src="/static/fontawesome/fontawesome-all.js"></script>-->
 
 <!-- CSS -->
@@ -29,61 +30,58 @@
   
 <!-- Page Header -->
   <header class="page_header">
-  	<div class="container nav_bar clearfix">
-  		<nav class="navigation_wrapper">
-  			<ul class="navigation navigation_main">
-  				<li class="navigation_item"><a class="navigation_link" href="#">Support</a></li>
-  				<li class="navigation_item"><a class="navigation_link" href="#">Delivery</a></li>
-  				<li class="navigation_item"><a class="navigation_link" href="#">Legal</a></li>
-  				<li class="navigation_item"><a class="navigation_link" href="#">About us</a></li>
-  			</ul>
-  		</nav>
-  		<div class="order_wrapper">
-  			<a class="order_link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> <span> $465.00  4 Items</span></a>
-  		</div>
-  		<div class="authorization_wrapper">
-  			<ul class="authorization authorization_main">
-  				<li class="authorization_item"><a class="authorization_link" href="#">Login</a></li>
-  				<li class="authorization_item"><a class="authorization_link" href="#">Register</a></li>
-  			</ul>
-  		</div>
+  	<div class="header_top">
+  		<div class="container clearfix">
+	 	 	<div class="add_options">
+	  			<ul class="additional additional_options">
+  					<li class="options_item"><a class="options_link" href="#">Support</a></li>
+  					<li class="options_item"><a class="options_link" href="#">Delivery</a></li>
+  					<li class="options_item"><a class="options_link" href="#">Legal</a></li>
+  					<li class="options_item"><a class="options_link" href="#">About us</a></li>
+  				</ul>
+  			</div>
+  			<div class="authorization_wrapper">
+  				<ul class="authorization authorization_main">
+  					<li class="authorization_item"><a class="authorization_link" href="#">Login</a></li>
+  					<li class="authorization_item"><a class="authorization_link" href="#">Register</a></li>
+  				</ul>
+  			</div>
+	  		<div class="order_wrapper">
+  				<a class="order_link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> <span> $465.00  4 Items</span></a>
+  			</div>
+ 	 	</div>
   	</div>
-  	<div class="container goods clearfix">
-  		<div class="brand">
-  			<a class="brand_link"><img class="brand_logo" src="img/Logo.png" alt="Sportshold Logo" width="182"></a>
-  			<h2 class="brand_name visually_hidden">Sportshold</h2>
-  		</div>
-  		<div class="filter">
-  			<form class="categories" name="categories" action="#" method="post">
-  				<label class="categories_filter" for="categories_home">
-  					<input id="categories_home" type="radio" name="filter" value="home" checked>
-  					<span>Home</span>
-  				</label>
-  				<label class="categories_filter" for="categories_men">
-  					<input id="categories_men" type="radio" name="filter" value="men">
-  					<span>Men</span>
-  				</label>
-  				<label class="categories_filter" for="categories_women">
-	  				<input id="categories_women" type="radio" name="filter" value="women">
-	  				<span>Women</span>
-	  			</label>
-  				<label class="categories_filter" for="categories_children">
-	 				<input id="categories_children" type="radio" name="filter" value="children">
-	 				<span>Children</span>
-	 			</label>
-  				<label class="categories_filter" for="categories_baby">
-	  				<input id="categories_baby" type="radio" name="filter" value="baby">
-	  				<span>Baby</span>
-	  			</label>
-  				<label class="categories_filter" for="categories_our_brands">
-	  				<input id="categories_our_brands" type="radio" name="filter" value="our_brands">
-	  				<span>Our Brands</span>
-	  			</label>
-  				<label class="categories_filter" for="categories_sales">
-	  				<input id="categories_sales" type="radio" name="filter" value="sales">
-	  				<span>Sales</span>
-  				</label>  				
-  			</form>
+  	<div class="header_bottom">
+ 	 	<div class="container clearfix">
+  			<div class="brand">
+  				<a class="brand_link"><img class="brand_logo" src="img/Logo.png" alt="Sportshold Logo" width="182"></a>
+  				<h2 class="brand_name visually_hidden">Sportshold</h2>
+  			</div>
+  			<div class="navigation">
+  				<ul class="categories">
+  					<li class="categories_navigation">
+  						<a class="navigation_link">Home</a>
+	  				</li>
+  					<li class="categories_navigation">
+  						<a class="navigation_link">Men</a>
+  					</li>
+	  				<li class="categories_navigation">
+		  				<a class="navigation_link">Women</a>
+	  				</li>
+  					<li class="categories_navigation">
+	 					<a class="navigation_link">Children</a>
+		 			</li>
+  					<li class="categories_navigation">
+	  					<a class="navigation_link">Baby</a>
+		  			</li>
+  					<li class="categories_navigation">
+	  					<a class="navigation_link">Our Brands</a>
+	  				</li>
+	  				<li class="categories_navigation">
+		  				<a class="navigation_link">Sales</a>
+  					</li>  				
+	  			</ul>
+	  		</div>
   		</div>
     </div>
   </header>
@@ -96,26 +94,26 @@
   	<!--Banner-->
   	<section class="banner">
   		<h2 class="visually_hidden">Nike Air Max</h2>
-  		<div class="container banner_main">
+		<div class="container">
   			<img class="sneakers_banner" src="img/Banner_img.png" alt="Sneakers Nike Air Max" width="774">
-  			<p class="banner_text_contant">
-  				<span>From $80.00</span><br>
-  				<strong>Nike Air Max</strong><br>
-  				<em>50 Variants</em>
+ 			<p class="banner_text_contant">
+				<span>From $80.00</span><br>
+				<strong>Nike Air Max</strong><br>
+				<em>50 Variants</em>
 			</p>
   			<p class="banner_text_contant_description">
-  				Since this is our favorite sneaker, we're bringing you<br>
-  				50 variants to suit everyone's needs.
- 			</p>
+				Since this is our favorite sneaker, we're bringing you<br>
+				50 variants to suit everyone's needs.
+			</p>
   			<a class="btn btn_browsing" href="#">BROWSE VARIANTS</a>
-  		</div>
+		</div>
   	</section>
   	<!--/Banner-->
 
   	<!--Our best Offers-->
   	<section class="our_best_offers">
   		<h2 class="visually_hidden">Our best Offers</h2>
-  		<div class="container best_offers">
+  		<div class="container clearfix">
   			<ul class="list_best_offers">
   				<li class="best_offer">
   					<figure class="figure_kyrie">
@@ -306,10 +304,19 @@
 				<div class="slider_wrapper">
 					<div class="slider_indicators">
   						<label class="clients_name" for="client_1">
+  							<span class="avatar_client"><img class="img_client" src="img/Avatar_client.jpg" alt="avatar"></span><br>
+  							<span class="name_client">Christopher Atkins</span><br>
+  							<span class="rating_client five_st"><!--<img class="img_rating" src="img/Rating_sprite.png" alt="rating" width="117px">--></span>
   						</label>
   						<label class="clients_name" for="client_2">
+  							<span class="avatar_client"><img class="img_client" src="img/Avatar_client.jpg" alt="avatar"></span><br>
+  							<span class="name_client">Andrew Ferraccioli</span><br>
+  							<span class="rating_client four_st"><!--<img class="img_rating" src="img/Rating_sprite.png" alt="rating" width="117px">--></span>
   						</label>
   						<label class="clients_name" for="client_3">
+  							<span class="avatar_client"><img class="img_client" src="img/Avatar_client.jpg" alt="avatar"></span><br>
+  							<span class="name_client">Sandra Jensen</span><br>
+  							<span class="rating_client three_st"><!--<img class="img_rating" src="img/Rating_sprite.png" alt="rating" width="117px">--></span>
   						</label>
   					</div>
 					<ul class="slider_contant container">
@@ -339,7 +346,7 @@
   						<time class="public_time">DEС 27, 2017</time>
   						<p class="article_name">Lorem ipsum dolor sit amet<br>
   						consectetur adipiscing elit<br>
-	  					<span><i class="fas fa-comments"></i>24 Comments</span></p> 
+	  					<i class="fa fa-comments"></i> <span> 24 Comments</span></p> 
 	  				</a> 				
   				</li>
   				<li class="news_article">
@@ -348,7 +355,7 @@
 	  					<time class="public_time">DEС 27, 2017</time>
   						<p class="article_name">Lorem ipsum dolor sit amet<br>
   						consectetur adipiscing elit<br>
-  						<span><i class="fas fa-comments"></i>24 Comments</span></p>
+  						<i class="fa fa-comments"></i> <span> 24 Comments</span></p>
   					</a>  				
 	  			</li>
   				<li class="news_article">
@@ -357,7 +364,7 @@
   						<time class="public_time">DEС 27, 2017</time>
 	  					<p class="article_name">Lorem ipsum dolor sit amet<br>
 	  					consectetur adipiscing elit<br>
-  						<span><i class="fas fa-comments"></i>24 Comments</span></p>  	
+  						<i class="fa fa-comments"></i> <span> 24 Comments</span></p>  	
   					</a>			
   				</li>
   			</ul>
@@ -465,10 +472,10 @@
   			</div>
   			<div class="social">
   				<ul class="social_list">
-  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Twitter</span><i class="fab fa-twitter"></i></a></li>
-  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Facebook</span><i class="fab fa-facebook-f"></i></a></li>
-  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Pinterest</span><i class="fab fa-pinterest"></i></a></li>
-  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">YouTube</span><i class="fab fa-youtube"></i></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Twitter</span><i class="fa fa-twitter"></i></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Facebook</span><i class="fa fa-facebook-f"></i></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Pinterest</span><i class="fa fa-pinterest"></i></i></a></li>
+  					<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">YouTube</span><i class="fa fa-youtube"></i></a></li>
   				</ul>
   			</div>
   		</div>
@@ -476,5 +483,11 @@
   </footer>
 <!-- /Page Footer -->
   
+
+ <!--  Java Scripts  -->
+<script src="js/no-js.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/sticky-header.js"></script>
+
 </body>
 </html>
