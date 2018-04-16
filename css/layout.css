@@ -38,13 +38,6 @@ html
 	clear: both;
 }
 
-.page_header
-{
-	display: block;
-	margin: 0;
-	padding: 0;
-}
-
 .visually_hidden
 {
 	position: absolute;

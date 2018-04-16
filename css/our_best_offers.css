@@ -1,7 +1,6 @@
 ﻿/* Our best offers */
 
 .our_best_offers,
-.best_offers,
 .logo_best_offer,
 .logo_best_offer_img,
 .list_best_offers,
@@ -25,7 +24,7 @@
 	padding: 0;
 }
 
-.container
+.our_best_offers .container
 {
 	position: relative;
 }

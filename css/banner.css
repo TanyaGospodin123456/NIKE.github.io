@@ -1,9 +1,7 @@
 ﻿/* Banner */
 
 .banner,
-.banner_main,
-.sneakers_banner,
-.banner_text_contain
+.sneakers_banner
 {
 	margin: 0;
 	padding: 0;
@@ -17,15 +15,16 @@
 
 .banner .container
 {
-	box-sizing: border-box;
-	padding-top: 133px;
-	padding-bottom: 134px;
-	padding-left: 570px;
+	position: relative;
 }
 
-.banner_main
+.banner .container
 {
-	position: relative;
+	box-sizing: border-box;
+
+	padding-top: 143px;
+	padding-bottom: 143px;
+	padding-left: 570px;
 }
 
 .sneakers_banner
@@ -64,7 +63,6 @@
 
 .banner_text_contant_description
 {
-	/*display: block;*/
 	margin-top: 17px;
 	font-size: 16px;
 	line-height: 26px;

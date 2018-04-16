@@ -20,7 +20,6 @@
 {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	width: 1110px;
 
 	text-align: center;
 }
@@ -66,7 +65,8 @@
 	cursor: pointer;
 }
 
-.products_filter:hover span
+.products_filter:hover span,
+.products_filter input[type="radio"]:checked + span
 {
 	color: #623131;
 	font-family: 'TruenoBold', sans-serif;

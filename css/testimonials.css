@@ -1,15 +1,20 @@
 ﻿/* Testimonials */
 
 .testimonials,
-.container,
 .slider,
 .slider_switch,
 .slider_wrapper,
 .slider_indicators,
 .clients_name,
+.avatar_client,
+.name_client,
+.rating_client,
 .slider_contant,
 .slider_slide,
-.testimonials_client
+.testimonials_client,
+.avatar_client,
+.name_client,
+.rating_client
 {
 	margin: 0;
 	padding: 0;
@@ -46,19 +51,16 @@
 	left: 0;
 	top: 100px;
 	right: 0;
-	width: 540px;
 	margin: 0 auto;
 	padding: 0;
 
 	text-align: center;
-	font-size: 0;
-	line-height: 0;
-	vertical-align: middle;
 }
 
 .clients_name
 {
 	display: inline-block;
+	box-sizing: content-box;
 	vertical-align: middle;
 	width: 154px;
 	height: 133px;
@@ -68,42 +70,90 @@
 	transition: opasity 0.5s;
 }
 
-.clients_name:last-child
-{
-	width: 118px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.clients_name::before
-{
-	content: "";
-
-	position: absolute;
-	top: 0;
-	left: 191px;
-
-	width: 153px;
-	height: 133px;
-	background-image: url(../img/Client_2.png);
-	background-repeat: no-repeat;
-	white-space: nowrap;
-}
-
-.clients_name:first-child::before
-{
-	left: 0;
-	background-image: url(../img/Client_1.png);
-}
-.clients_name:last-child::before
-{
-	left: 400px;
-	background-image: url(../img/Client_3.png);
-}
-
 .clients_name:hover
 {
 	opacity: 1;
+}
+
+.img_client
+{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	white-space: nowrap;
+	z-index: 0;
+}
+
+.avatar_client
+{
+	position: relative;
+}
+
+.avatar_client::after
+{
+	content: "";
+    position: absolute;
+    left: 0;
+    box-sizing: content-box;
+    width: 63px;
+    height: 63px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.name_client
+{
+	font-family: 'TruenoBold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 26px;
+	color: #ffffff;
+}
+
+.rating_client
+{
+	width: 117px;
+	line-height: 1px;
+	position: relative;
+}
+
+.rating_client::after
+{
+	content: "";
+	position: absolute;
+	top: 112px;
+	left: 20px;
+	width: 117px;
+	height: 20px;
+
+	background-image: url(../img/Rating_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.five_st::after
+{
+	background-position: 0 0;
+}
+
+.four_st::after
+{
+	background-position: 0 -21px;
+}
+
+.three_st::after
+{
+	background-position: 0 -42px;
+}
+
+.two_st::after
+{
+	background-position: 0 -63px;
+}
+
+.one_st::after
+{
+	background-position: 0 -84px;
 }
 
 .slider_contant
@@ -143,8 +193,8 @@
 	opacity: 1;
 } 
 
-.slider_contant::before {
-  
+.slider_contant::before 
+{
   content: "";
   position: absolute;
   bottom: 100%;
@@ -161,15 +211,15 @@
 
 #client_1:checked ~ .slider_wrapper .slider_contant::before
 {
-	left: 335px;
+	left: 320px;
 }
 #client_2:checked ~ .slider_wrapper .slider_contant::before
 {
-	left: 527px;
+	left: 512px;
 }
 #client_3:checked ~ .slider_wrapper .slider_contant::before
 {
-	left: 719px;
+	left: 707px;
 } 
 
 
