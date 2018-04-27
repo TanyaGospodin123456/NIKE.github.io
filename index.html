@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="css/help_request.css">
   <link rel="stylesheet" href="css/usps.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/loginform.css">
+  <link rel="stylesheet" href="css/registerform.css">
+
 
  <!-- JS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -28,7 +31,7 @@
 
   
 </head>
-<body class="no-js">
+<body id="top" class="no-js">
   
 <!-- Page Header -->
   <header class="page_header">
@@ -44,8 +47,8 @@
   			</div>
   			<div class="authorization_wrapper">
   				<ul class="authorization authorization_main">
-  					<li class="authorization_item"><a class="authorization_link" href="#">Login</a></li>
-  					<li class="authorization_item"><a class="authorization_link" href="#">Register</a></li>
+  					<li class="authorization_item"><button class="authorization_link" onclick="document.getElementById('id01').style.display='block'" style="width: 73px;">Login</button></li>
+  					<li class="authorization_item"><button class="authorization_link" onclick="document.getElementById('id02').style.display='block'" style="width: 90px;">Register</button></li>
   				</ul>
   			</div>
 	  		<div class="order_wrapper">
@@ -88,6 +91,67 @@
     </div>
   </header>
 <!-- /Page Header -->
+
+<!-- Login and Regester Forms -->
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <!--<div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>-->
+
+    <div class="login_wrapper">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="login_wrapper" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <!--<div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>-->
+
+    <div class="register_wrapper">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="register_wrapper" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<!-- /Login and Regester Forms -->
 
 <!-- Page Main -->
   <main class="page_content">
@@ -485,11 +549,14 @@
   </footer>
 <!-- /Page Footer -->
 
-<a href="#" class="scrollup">Наверх</a>  
+<a href="#top" class="scrollup">Наверх</a>  
 
  <!--  Java Scripts  -->
 <script src="js/no-js.js"></script>
 <script src="js/sticky-header.js"></script>
+<script src="js/scrolltop.js"></script>
+<script src="js/loginform.js"></script>
+<script src="js/registerform.js"></script>
  <!-- /Java Scripts  -->
 
 </body>
