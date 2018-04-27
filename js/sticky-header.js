@@ -1,6 +1,6 @@
 ﻿(function() {
   
-  var pageHeader = document.querySelector(".page_header");
+  var pageHeader = document.querySelector(".header_bottom");
   var pageHeaderHeight = pageHeader.getBoundingClientRect().bottom + window.pageYOffset;
   
   window.addEventListener("scroll", function() {
