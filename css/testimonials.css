@@ -114,44 +114,34 @@
 .rating_client
 {
 	width: 117px;
-	line-height: 1px;
-	position: relative;
-}
-
-.rating_client::after
-{
-	content: "";
-	position: absolute;
-	top: 112px;
-	left: 20px;
-	width: 117px;
 	height: 20px;
-
+	display: block;
+	margin: 0 auto;
 	background-image: url(../img/Rating_sprite.png);
 	background-repeat: no-repeat;
 }
 
-.five_st::after
+.five_st
 {
 	background-position: 0 0;
 }
 
-.four_st::after
+.four_st
 {
 	background-position: 0 -21px;
 }
 
-.three_st::after
+.three_st
 {
 	background-position: 0 -42px;
 }
 
-.two_st::after
+.two_st
 {
 	background-position: 0 -63px;
 }
 
-.one_st::after
+.one_st
 {
 	background-position: 0 -84px;
 }
