@@ -27,8 +27,7 @@
 
  <!-- JS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/scrolltop.js"></script>
-
+  <script src="js/scrolltop.js"></script>
   
 </head>
 <body id="top" class="no-js">
@@ -123,7 +122,6 @@
 </div>
 
 
-
 <div id="id02" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
@@ -133,12 +131,24 @@
     </div>-->
 
     <div class="register_wrapper">
+    	<h1>Register</h1>
+    	<p>Please fill in this form to create an account.</p>
+    	<hr>
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-        
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
       <button type="submit">Register</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -147,10 +157,11 @@
 
     <div class="register_wrapper" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
     </div>
   </form>
 </div>
+
 <!-- /Login and Regester Forms -->
 
 <!-- Page Main -->
@@ -554,7 +565,6 @@
  <!--  Java Scripts  -->
 <script src="js/no-js.js"></script>
 <script src="js/sticky-header.js"></script>
-<script src="js/scrolltop.js"></script>
 <script src="js/loginform.js"></script>
 <script src="js/registerform.js"></script>
  <!-- /Java Scripts  -->
