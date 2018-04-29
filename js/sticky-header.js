@@ -5,13 +5,13 @@
   
   window.addEventListener("scroll", function() {
     
-    if (pageHeader.classList.contains("page_header-sticky") && (window.pageYOffset < pageHeaderHeight)) {
+    if (pageHeader.classList.contains("header_bottom-sticky") && (window.pageYOffset < pageHeaderHeight)) {
         
-      pageHeader.classList.remove("page_header-sticky");
+      pageHeader.classList.remove("header_bottom-sticky");
         
     } else if (window.pageYOffset > pageHeaderHeight) {
         
-      pageHeader.classList.add("page_header-sticky");
+      pageHeader.classList.add("header_bottom-sticky");
         
     }
     
