@@ -23,14 +23,13 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/loginform.css">
   <link rel="stylesheet" href="css/registerform.css">
-
+  <link rel="stylesheet" href="css/scrollup.css">
 
  <!-- JS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="js/scrolltop.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   
 </head>
-<body id="top" class="no-js">
+<body class="no-js">
   
 <!-- Page Header -->
   <header class="page_header">
@@ -157,7 +156,7 @@
 
     <div class="register_wrapper" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
+    <p>Already have an account? <a href="#id01">Sign in</a>.</p>
     </div>
   </form>
 </div>
@@ -559,14 +558,18 @@
   	</div>
   </footer>
 <!-- /Page Footer -->
-
-<a href="#top" class="scrollup">Наверх</a>  
-
+<!--<div class="scroll-up">
+      <a href="#top" class="toup">Up</a>
+   </div>-->
+<!--<a href="#toup" class="toup">Наверх</a>  -->
+<DIV ID = "toTop" > ^ Наверх </ DIV >
  <!--  Java Scripts  -->
 <script src="js/no-js.js"></script>
 <script src="js/sticky-header.js"></script>
 <script src="js/loginform.js"></script>
 <script src="js/registerform.js"></script>
+<script src="js/scrolltop.js"></script>
+
  <!-- /Java Scripts  -->
 
 </body>
