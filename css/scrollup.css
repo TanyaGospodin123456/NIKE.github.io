@@ -1,0 +1,44 @@
+﻿/* Scrollup */
+#toTop {
+width:40px;
+height: 40px;
+opacity: 0.3;
+/*border:1px solid #ccc;*/
+background-image: url('../img/icon_top.png');
+background-repeat: no-repeat;
+/*background:#f7f7f7;
+text-align:center;
+padding:5px;*/
+text-indent: -9999px;
+position:fixed;
+bottom:50px; /* отступ кнопки от нижнего края страницы*/
+right:100px;
+cursor:pointer;
+display:none;
+/*color:#333;
+font-family:verdana;
+font-size:11px;*/
+}/*
+.toup
+{
+	width: 40px;
+	height: 40px;
+	opacity: 0.3;
+	position: fixed;
+	bottom: 50px;
+	right: 100px;
+	visibility: hidden;
+	text-indent: -9999px;
+        z-index: 10;
+        margin: 0 auto;
+	background-image: url('../img/icon_top.png');
+	background-repeat: no-repeat;
+}
+
+toup-visible
+{
+	visibility: visible;
+	/*display: block;*/
+}*/
+
+/* /Scrollup */
